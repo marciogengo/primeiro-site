@@ -1,5 +1,10 @@
 console.log('script conectado');
-var nome = 'Eduardo';
-console.log(nome);
-nome = 5;
-console.log(nome);
+
+function mostrarMensagem() {
+  var nome = document.getElementById('inputNome').value;
+
+  var mensagem =
+    'Seja bem vindo ao meu Site, ' + nome + '! Que bom que você veio.';
+
+  document.getElementById('displayMensagem').textContent = mensagem;
+}

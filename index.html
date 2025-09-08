@@ -6,11 +6,14 @@
     <title>Meu primeiro Site</title>
   </head>
   <body>
-    <h1>Olá, eu sou o Marcio</h1>
+    <h1>Olá, eu sou o Márcio</h1>
     <p>Estou aprendendo a criar site html</p>
-    <p>Seja bem vindo ao meu Site</p>
-    <input type="text" placeholder="digite seu nome" />
-    <button>Enviar</button>
+    <p id="displayMensagem">Seja bem vindo ao meu Site</p>
+    <h2>Digite seu nome:</h2>
+    <input type="text" id="inputNome" placeholder="Digite seu nome" required />
+
+    <button onclick="mostrarMensagem()">Enviar</button>
+
     <script src="script.js"></script>
   </body>
 </html>
