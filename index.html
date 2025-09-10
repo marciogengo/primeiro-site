@@ -7,13 +7,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="apresentacao">Olá, eu sou o Márcio</h1>
-    <p>Estou aprendendo a criar site html</p>
-    <p id="displayMensagem">Seja bem vindo ao meu Site</p>
-    <h2>Digite seu nome:</h2>
-    <input type="text" id="inputNome" placeholder="Digite seu nome" required />
+    <div class="container">
+      <header>
+        <h1 id="apresentacao">Olá, eu sou o <strong>Márcio</strong></h1>
+      </header>
 
-    <button onclick="mostrarMensagem()">Enviar</button>
+      <div>
+        <img src="./imagens/foto-marcio.jpeg" alt="foto do Márcio" />
+      </div>
+
+      <a href="curriculo.html">📄 Veja meu currículo</a>
+
+      <p>Estou aprendendo a criar site <strong>HTML</strong></p>
+      <p id="displayMensagem">Seja bem-vindo ao meu <span>Site</span></p>
+
+      <h2>Digite seu nome:</h2>
+      <input
+        type="text"
+        id="inputNome"
+        placeholder="Digite seu nome"
+        required
+      />
+
+      <button onclick="mostrarMensagem()">Enviar</button>
+    </div>
 
     <script src="script.js"></script>
   </body>
